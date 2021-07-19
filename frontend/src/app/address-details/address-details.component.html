@@ -1,0 +1,26 @@
+<div *ngIf="addresses && addresses.length > 0; else elseBlock">
+    <div *ngFor="let address of addresses" >
+        <hr>
+        <div>
+            <label><b>Street: </b></label> {{address.streetAddress}}
+        </div>
+        <div>
+            <label><b>Postal Code: </b></label> {{address.postalCode}}
+        </div>
+        <div>
+            <label><b>City: </b></label> {{address.city}}
+        </div>
+        <div>
+            <label><b>State Province </b></label> {{address.stateProvince}}
+        </div>
+        <div>
+            <label><b>Country: </b></label> {{address.country}}
+        </div>
+        
+    </div>
+</div>
+<ng-template #elseBlock>
+    <div>
+        <p>The employee doesn`t have a registered address</p>
+    </div>
+</ng-template>
