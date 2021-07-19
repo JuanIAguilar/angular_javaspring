@@ -9,4 +9,4 @@ The purpose of this project is to write a Employee List using:
     
 DEPLOYMENT
 
-Run `docker-compose up` for deploy this app. Navigate to `http://localhost/`.
+Run `docker-compose up` for deploy this app. Navigate to `http://localhost:4200/`.
